@@ -23,13 +23,13 @@ If we could get the temperature datapoints plotted on the graph into Sonic Pi, w
 The format of the weather function is:
 
 ```
-WeatherData[“<name of place>”, “<property to get>”, {<year>,<month>,<day>}]
+WeatherData["<name of place>", "<property to get>", {<year>,<month>,<day>}]
 ```
 
 The parts in angle brackets should be replaced with the desired values. On starting, Mathematica will open a ‘notebook’ window. A useful way to check the data we will use is to plot it as a graph. Click in the notebook and type this command:
  
 ```
- 	DateListPlot[WeatherData[“Kathmandu”, "Temperature", {2014, 10, 1}],  Joined -> False]
+ 	DateListPlot[WeatherData["Kathmandu", "Temperature", {2014, 10, 1}],  Joined -> False]
 ```
  	
 Now hold Shift and press Enter with the cursor on the same line as your input; this tells Mathematica to process it. It will display your input as `In[1]:=…`. This will take a **long** time the first time you run a query, while Mathematica downloads data sources; it could be 10 minutes or so. Now is the time to go and make a cup of tea…
@@ -45,7 +45,7 @@ Each point on the graph corresponds to a temperature in °C during a day.
 The easiest way to get the data into Sonic Pi is to write it into a text file, which Sonic Pi can then read for playing. To do this, execute the following command:
 
 ```
-Export[“temperature.txt”, WeatherData[“Kathmandu”, “Temperature”, {2014, 10, 1}][“Values”]]
+Export["temperature.txt", WeatherData["Kathmandu", "Temperature", {2014, 10, 1}]["Values"]]
 ```
 
 This will create a file called `temperature.txt`. Take a look at it by opening Leafpad from the Accessories menu and viewing the `.txt` file. You’ll see the extracted data formatted like this:
