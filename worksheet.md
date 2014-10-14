@@ -79,7 +79,7 @@ def scale(t)
 end
 
 # now play the weather!
-with_synth "fm"
+use_synth :tri
 File.open('/home/pi/temperature.txt') do |file|
   file.each_line {
     |line|
