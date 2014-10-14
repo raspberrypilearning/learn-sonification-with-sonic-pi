@@ -18,7 +18,7 @@ If we could get the temperature datapoints plotted on the graph into Sonic Pi, w
 ## Look at weather data from Mathematica
 
 1. Quit the web browser.
-2. Launch Mathematica from the desktop icon or by clicking on the Main Menu, then Education, then Mathematica. It will take a little while to load; you can see its progress from messages displayed over the image. Mathematica is a huge and complex system, but it has excellent documentation which we can use to see how to access weather information. We’ll use a function called `WeatherData`. More information can be found [in the official documentation](http://reference.wolfram.com/documentation-search.html?query=weatherdata).
+1. Launch Mathematica from the desktop icon or by clicking on the Main Menu, then Education, then Mathematica. It will take a little while to load; you can see its progress from messages displayed over the image. Mathematica is a huge and complex system, but it has excellent documentation which we can use to see how to access weather information. We’ll use a function called `WeatherData`. More information can be found [in the official documentation](http://reference.wolfram.com/documentation-search.html?query=weatherdata).
     
 The format of the weather function is:
 
@@ -57,9 +57,7 @@ This shows the temperatures as Mathematica `Quantity` values; these have both a 
 ## Hear the sound (finally!)
 
 1. Quit Mathematica.
-2. Open the file `workspace.txt` in the Leafpad editor.
-3. Select all the text with `Ctrl + A`, and copy it with `Ctrl + C`.
-4. Open Sonic Pi from the Programming menu, select an unused workspace from the tabs at the bottom of the window then paste in the text you just copied with `Ctrl + V`.
+1. Open Sonic Pi from the Programming menu, select an unused workspace from the tabs at the bottom of the window then copy and paste in the text below with `Ctrl + C` and `Ctrl + V`.
 
 Have a look at the code:
     
