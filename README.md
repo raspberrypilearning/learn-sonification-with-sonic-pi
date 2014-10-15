@@ -12,7 +12,9 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 
 - Speakers (if you're using a TV as a display you can use this to output sound), or headphones plugged into the audio socket.
 - An internet connection, so the Pi can download data.
-- A kettle, or other means of making a beverage, during the long process of Step 2 of the [worksheet](https://github.com/stevelloyd/Learn-sonification-with-Sonic-Pi/blob/master/worksheet.md).
+- A kettle, or other means of making a beverage, during the long process of Step 2 of the [worksheet](worksheet1.md).
+
+Make sure you’ve updated Mathematica and Sonic Pi to the latest versions with `sudo apt-get update; sudo apt-get upgrade`.
 
 This resource is based on a blog post by [Steve Lloyd](http://stevelloyd.net/).
 
