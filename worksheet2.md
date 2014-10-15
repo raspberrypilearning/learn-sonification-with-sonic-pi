@@ -1,4 +1,4 @@
-## Hear the sound (finally!)
+## Hear the sound of the weather (finally!)
 
 1. Quit Mathematica.
 1. Open Sonic Pi from the Programming menu, select an unused workspace from the tabs at the bottom of the window then copy and paste in the text below with `Ctrl + C` and `Ctrl + V`.
