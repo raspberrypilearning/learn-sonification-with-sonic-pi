@@ -19,10 +19,10 @@ end
 # multiply t by a scaling factor to get a playable note
 # and limit to a lower minimum
 def scale(t)
-+ scaling_factor = 3
-+ lower_limit = 30
-+ scaled_note = t.to_i * scaling_factor
-+ return (scaled_note < lower_limit) ? lower_limit : scaled_note
+  scaling_factor = 3
+  lower_limit = 30
+  scaled_note = t.to_i * scaling_factor
+  return (scaled_note < lower_limit) ? lower_limit : scaled_note
 end
 
 # now play the weather!
