@@ -11,14 +11,14 @@ Have a look at the code:
 # define some utility functions
 # quantity_to_temp(quantity)
 # return the temperature value from a Quantity string 
-def quantity_to_temp(quantity)
-  return quantity.sub('Quantity[', '').split('.')[0]
+define :quantity_to_temp do |q|
+  return q.sub('Quantity[', '').split('.')[0]
 end
 
 # scale(t)
 # multiply t by a scaling factor to get a playable note
 # and limit to a lower minimum
-def scale(t)
+define :scale do |t|
   scaling_factor = 3
   lower_limit = 30
   scaled_note = t.to_i * scaling_factor
